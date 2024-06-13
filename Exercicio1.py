@@ -1,13 +1,12 @@
-# Escreva	um	programa	para	que	sejam	informados	10	(dez)	números	inteiros.	O	programa	
-# deve	informar	o	menor	e	o	maior	valor	informado.
+# Escreva um programa para que sejam informados 10 (dez) números inteiros. O programa	
+# deve informar o menor e o maior valor informado.
 import re
-import sys
 
 print("#"*25)
 print("Digite 999 para sair!")
-max = 0
-min = 0
-list = []
+num_max = 0
+num_min = 0
+list_num = []
 validar = True
 
 def validar_numeros(entrada):
@@ -23,10 +22,17 @@ for i in range(10):
             print("Entrada inválida digite novamente!")
 
     if (int(num) == 999):
-        print('entrei aqui')
-        break
+        print('Entrada 999 detectada. Saindo... ')
+        exit()
     
-    list.append(int(num))
+    list_num.append(int(num))
     validar = True
 
-print('Os numeros digitados foram: ', list)
+num_max = max(list_num)
+num_min = min(list_num)
+num_sum = sum(list_num)
+
+print('Os numeros digitados foram: ', list_num)
+print('O maior número digitado foi: ', num_max)
+print('O menor número digitado foi: ', num_min)
+print('A soma de todos os números digitados é: ', num_sum)
