@@ -3,8 +3,6 @@
 # Ao final, o programa deve apresentar o total de votos e a porcentagem, em relação a todos
 # os eleitores que votaram, de votos de cada candidato, votos nulos e votos em branco.
 
-import re
-
 print("-" * 50)
 print("CALCULADORA DE VOTOS!".center(50))
 print("-" * 50)
@@ -29,6 +27,7 @@ total_votos = sum([candidato1, candidato2, candidato3, brancos, nulos])
 
 print("-" * 50)
 print("O TOTAL de votos desta eleição foi de ", total_votos)
+print('O total de votos do CANDIDATO 1 foi de ', candidato1, ' = ', candidato1/total_votos*100, '%')
 print("Obrigado por usar a calculadora de fotos!")
 print("CALCULADORA DE VOTOS!".center(50))
 print("-" * 50)
