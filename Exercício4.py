@@ -14,7 +14,8 @@ def EnumInterio(entrada):
         
         try:
             if (valor.lower() == 'sair'):
-                print("\033[1;30;41mSeu pedido é uma ordem, saindo...\033[m")
+                print("\033[1;30;41mSolicitação de sainda dectada, saindo...\033[m")
+                time.sleep(2)
                 Abertura("obrigado, até mais!")
                 exit()
                 
